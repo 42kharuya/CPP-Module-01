@@ -1,9 +1,9 @@
-NAME			=	unnecessaryViolence
+NAME			=	sedIsForLosers
 
 CXX				=	c++
 CXXFLAGS		=	-Wall -Wextra -Werror -std=c++98 -pedantic
 
-SRCS			=	main.cpp Weapon.cpp HumanA.cpp HumanB.cpp
+SRCS			=	main.cpp FileManipulator.cpp
 
 OBJS_PATH		=	objs/
 OBJS			=	$(SRCS:%.cpp=objs/%.o)

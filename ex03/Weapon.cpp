@@ -1,14 +1,17 @@
 #include "Weapon.hpp"
 
-Weapon::Weapon(std::string name) : _name(name) {
-	std::cout << _name << "is created." << std::endl;
+Weapon::Weapon(std::string name) : _type(name) {
+	std::cout << _type << " is created" << std::endl;
 }
 
-std::string Weapon::getType() {
-	// この関数の役割を確認する
-	return _name;
+Weapon::~Weapon() {
+	std::cout << _type << " is destroyed" << std::endl;
 }
 
-void Weapon::setType(std::string name) {
-	_name = name;
+const std::string &Weapon::getType(void) {
+	return _type;
+}
+
+void Weapon::setType(const std::string &type) {
+	_type = type;
 }
