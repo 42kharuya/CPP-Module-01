@@ -8,7 +8,8 @@ int main(int argc, char *argv[])
 		return 1;
 	}
 	Harl harl;
-	if (!harl.complain(argv[1]))
+	if (!harl.checkLevel(argv[1]))
 		return 1;
+	harl.complain(argv[1]);
 	return 0;
 }

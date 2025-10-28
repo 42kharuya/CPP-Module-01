@@ -13,7 +13,8 @@ class Harl {
 	public:
 	 Harl();
 	 ~Harl();
-	 bool	complain(std::string level);
+	 bool checkLevel(std::string level);
+	 void complain(std::string level);
 };
 
 #endif // _HARL_H_
